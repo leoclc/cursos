@@ -6,15 +6,27 @@ public class Produto {
 	private String nome;
 	private String descricao;
 	private double preco;
-
+	private String cor;
 	public Produto() {}
 	
-	public Produto(Long id, String nome, String descricao, double preco) {
+	public Produto(Long id, String nome, String descricao, double preco,
+			String cor) {
+		super();
 		this.id = id;
 		this.nome = nome;
 		this.descricao = descricao;
 		this.preco = preco;
+		this.cor = cor;
 	}
+
+	public String getCor() {
+		return cor;
+	}
+
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+
 	public Long getId() {
 		return id;
 	}

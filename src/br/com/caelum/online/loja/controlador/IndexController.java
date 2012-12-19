@@ -10,5 +10,13 @@ public class IndexController {
 	public void root() {
 		System.out.println("Meu sistema com vraptor");
 	}
+	@Path("/ajuda")
+	public void ajuda() {
+		System.out.println("O método ajuda foi invocado");
+	}
+	@Path("/contato")
+	public void contato(){
+		System.out.println("O método contato foi invocado");
+	}
 
 }
